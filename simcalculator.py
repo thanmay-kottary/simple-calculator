@@ -78,7 +78,10 @@ while i ==True:
 
     elif input_choice == 6:
         num1 = float(input("Enter the number to find the square root: "))
-        print("The square root is:" ,square_root(num1))
+        if num1 < 0:
+            print("Cannot compute the square root of a negative number. The result is undefined in the real number system.")
+        else:
+            print("The square root is:" ,square_root(num1))
 
     elif input_choice == 7:
         num1 = float(input("Enter the base number: "))
